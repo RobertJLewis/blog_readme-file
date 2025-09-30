@@ -64,7 +64,7 @@ Comprehensive CRUD (Create, Read, Update, Delete) functionality has been impleme
 
 ## Strategy Plane
 ### Project Goals
-Threadly is a community-driven gaming blog platform designed for gamers, content creators, and enthusiasts. It enables users to sign up, log in, and share posts on a wide range of gaming topics, from reviews and tips to news and discussions. Users can create, edit, and delete their posts, interact with others through comments and likes, and browse content organised by category.
+Threadly is a community-driven gaming blog platform designed for gamers, content creators, and enthusiasts. It enables users to sign up, log in, and share posts on a wide range of gaming topics, from reviews and tips to news and discussions. Users can create, edit, and delete their posts, interact with others through comments and likes, and browse content organised by date posted.
 
 The platform replaces the limitations of static gaming blogs with a dynamic, mobile-responsive, and user-friendly interface. Whether at home, at an event, or on the go, users can easily read, contribute to, and engage with the latest gaming content.
 
@@ -175,7 +175,6 @@ Threadly is a full-stack web application designed to provide gamers and content 
   - **Personalised User Dashboard** – Each registered user has a personalised view of their posts.
   - **Post Creation & Management** – Users can create, edit, and delete their posts with rich content.
   - **Commenting & Likes** – Engage with the community by commenting on posts and liking content to encourage interaction.  
-  - **Search and Filtering** – Easily find posts by title, author, or category, and sort content by date or popularity.  
   - **Custom 404 & 500 Error Pages** – Friendly, branded error pages guide users when something goes wrong.  
 
 ### Additional Features
@@ -185,7 +184,6 @@ Threadly is a full-stack web application designed to provide gamers and content 
 
 ### Footer
 The footer appears consistently across all pages to support navigation, brand presence, and accessibility. It includes:
-
   - **Social Links** – Accessible icons linking to the site’s social media profiles.  
   - **Quick Links** – Direct access to key pages such as Home and Register (dynamically showing Dashboard when logged in).
   
@@ -335,7 +333,7 @@ Deployment  The Vinyl Crate project is deployed using Heroku, with Amazon RDS 
   3. Set a unique DB instance identifier, master username, and password.
   4. In the connectivity section, enable public access and ensure security group rules allow inbound connections from your IP.
   5. Launch the database and wait for the instance to become available.
-  6. Once ready, copy the Endpoint and construct your DATABASE_URL in the following format:  	      postgres://username:password@hostname:5432/dbname
+  6. Once ready, copy the Endpoint and construct your DATABASE_URL in the following format: postgres://username:password@hostname:5432/dbname
 
 ### Heroku App Setup
 1. In the Heroku Dashboard, click New → Create new app.
